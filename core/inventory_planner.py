@@ -1,3 +1,10 @@
+from typing import Dict, List
+from collections import deque
+import numpy as np
+import logging
+
+logger = logging.getLogger(__name__)
+
 class InventoryLiquidationPlanner:
     """
     BFS-based planner that pre-computes the minimum number of steps required
@@ -57,10 +64,10 @@ class InventoryLiquidationPlanner:
             self.plan[inv] = actions[0] if actions else 0
 
         logger.info(
-            "InventoryPlanner | plan built for inv in [%d, %d]",
-            "InventoryPlanner | plan built for inv in [%d, %d]",
-            -self.max_inventory, self.max_inventory,
-        )
+    "InventoryPlanner | plan built for inv in [%d, %d]",
+    -self.max_inventory, self.max_inventory
+    )
+
 
     def get_action(self, inventory: int) -> int:
         """
