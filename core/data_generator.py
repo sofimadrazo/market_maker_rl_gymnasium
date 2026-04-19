@@ -6,13 +6,13 @@ Synthetic price series generator using Geometric Brownian Motion (GBM).
 Author : Persona C
 """
 
-from _future_ import annotations
+from __future__ import annotations
 import logging
 
 import numpy as np
 import pandas as pd
 
-logger = logging.getLogger(_name_)
+logger = logging.getLogger(__name__)
 
 
 def generate_synthetic_prices(

@@ -7,12 +7,12 @@ Used for grid search and PSO initialisation (Entrega 2).
 Author : Persona C
 """
 
-from _future_ import annotations
+from __future__ import annotations
 import itertools
 import logging
 from typing import Dict, List
 
-logger = logging.getLogger(_name_)
+logger = logging.getLogger(__name__)
 
 
 def generate_hyperparam_grid(
