@@ -2,8 +2,6 @@
 core/data_generator.py
 ======================
 Synthetic price series generator using Geometric Brownian Motion (GBM).
-
-Author : Persona C
 """
 
 from __future__ import annotations
