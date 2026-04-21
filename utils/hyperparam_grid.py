@@ -4,7 +4,6 @@ utils/hyperparam_grid.py
 Cartesian hyperparameter grid generator using itertools.product.
 Used for grid search and PSO initialisation (Entrega 2).
 
-Author : Persona C
 """
 
 from __future__ import annotations
