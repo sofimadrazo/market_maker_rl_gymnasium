@@ -323,3 +323,27 @@ The modular design makes the following extensions straightforward:
 4. Russell, S. & Norvig, P. (2020). *Artificial Intelligence: A Modern Approach*, 4th ed. (BFS Chapter 3).
 
 ---
+# Market Maker RL — Version 2
+
+> Environment with Gymnasium Wrappers  
+> BSc in Computer Engineering · Artificial Intelligence Project
+
+---
+
+## What’s New in Version 2?
+
+Version 2 builds on the same environment developed in Deliverable 1 and introduces a **Gymnasium wrapper** that stabilizes agent training by controlling reward scale.
+
+| | Version 1 | Version 2 |
+|---|---|---|
+| Gymnasium Environment | ✅ | ✅ |
+| Fuzzy Logic | ✅ | ✅ |
+| BFS Search | ✅ | ✅ |
+| Heuristic Agent | ✅ | ✅ |
+| **ClipRewardWrapper** | ❌ | ✅ |
+
+---
+
+A wrapper is a layer that sits on top of the original environment without modifying it. It intercepts calls to `step()` and `reset()` in order to transform observations, actions, or rewards.
+
+
